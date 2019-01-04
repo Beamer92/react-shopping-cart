@@ -39,7 +39,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.cartItemsList)
     return (
       <div className="App">
        <CartHeader/>
