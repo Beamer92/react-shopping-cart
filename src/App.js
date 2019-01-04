@@ -33,13 +33,13 @@ class App extends Component {
   addItemToCart = (prodToAdd) => {
     let idcount = this.state.cartItemsList.length + 1
     prodToAdd.id = idcount
-    console.log(prodToAdd)
     this.setState({
       cartItemsList : [...this.state.cartItemsList, prodToAdd]
     })
   }
 
   render() {
+    console.log(this.state.cartItemsList)
     return (
       <div className="App">
        <CartHeader/>

@@ -22,7 +22,7 @@ function CartItems(props){
           </div>
           {
             props.cart.map(row => {
-              return <CartItem name={row.product.name} price={row.product.priceInCents} quantity={row.quantity}/>
+              return <CartItem key={row.id} name={row.product.name} price={row.product.priceInCents} quantity={row.quantity}/>
             })
             }
         </div>
